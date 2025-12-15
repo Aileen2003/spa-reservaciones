@@ -131,9 +131,17 @@ async function startServer() {
     console.log("Aviso: BD no disponible aún (esto es normal en local)");
   }
 
-  app.listen(PORT, () => {
-    console.log(`Servidor activo en http://localhost:${PORT}`);
-  });
+  const { ensureSchema } = require("./db");
+
+ensureSchema()
+  .then(() => console.log("Esquema de BD verificado"))
+  .catch(err => console.error("Error creando esquema", err));
+
+
+ app.listen(3000, "0.0.0.0", () => {
+  console.log("Servidor activo en 3000");
+});
+
 }
 
 startServer();
