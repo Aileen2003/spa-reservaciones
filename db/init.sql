@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS spa_db;
+USE spa_db;
+
+CREATE TABLE IF NOT EXISTS reservations (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  customer_name VARCHAR(100),
+  service VARCHAR(100),
+  date DATE,
+  time TIME,
+  status VARCHAR(20) DEFAULT 'CONFIRMED',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

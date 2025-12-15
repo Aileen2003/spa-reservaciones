@@ -1,0 +1,342 @@
+:root {
+  --rose-main: #A24C61;
+  --rose-soft: #E2A9C0;
+  --rose-light: #E1C9D5;
+  --wine-dark: #411528;
+  --wine-strong: #710C21;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--rose-light);
+  color: var(--wine-dark);
+}
+
+.header {
+  background: var(--wine-dark);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.header nav a {
+  color: var(--white);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hero {
+  background: linear-gradient(
+    rgba(65,21,40,0.6),
+    rgba(65,21,40,0.6)
+  ), url("https://images.unsplash.com/photo-1544161515-4ab6ce6db874") center/cover;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: var(--rose-main);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.services {
+  padding: 60px 20px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-card input,
+.form-card select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--rose-soft);
+}
+
+.reservations-list {
+  max-width: 800px;
+  margin: auto;
+}
+
+.footer {
+  background: var(--wine-dark);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* =========================
+   HOME – ESTILO DESERTIKA
+========================= */
+
+.hero-home {
+  background: linear-gradient(
+      rgba(65, 21, 40, 0.55),
+      rgba(65, 21, 40, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1544161515-4ab6ce6db874");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: white;
+  max-width: 700px;
+}
+
+.hero-overlay h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-overlay p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* INFO SECTION */
+.info-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  background: var(--sage-soft);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.info-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.info-icon {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.info-card h4 {
+  color: var(--wine-dark);
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.info-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* SERVICIOS HOME */
+.services-home {
+  padding: 60px 40px;
+  background: var(--rose-light);
+  text-align: center;
+}
+
+.services-home h3 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 30px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  font-weight: 500;
+  color: var(--wine-dark);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+/* ===============================
+   RESERVATIONS – PREMIUM LAYOUT
+================================ */
+
+.reservations-page {
+  padding: 60px 40px;
+  background: var(--rose-light);
+  min-height: 100vh;
+}
+
+/* FORM CARD */
+.reservation-card {
+  max-width: 520px;
+  margin: 0 auto 60px;
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.reservation-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: "Playfair Display", serif;
+  color: var(--wine-dark);
+}
+
+.reservation-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.reservation-form label {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: var(--wine-dark);
+}
+
+.reservation-form input,
+.reservation-form select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--rose-soft);
+  font-size: 0.95rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary.full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* LISTADO */
+.reservations-list-section {
+  max-width: 900px;
+  margin: auto;
+}
+
+.reservations-list-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+.reservations-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CARD DE RESERVACIÓN */
+.reservation-item {
+  background: white;
+  border-radius: 16px;
+  padding: 22px 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reservation-info h3 {
+  margin-bottom: 6px;
+  color: var(--wine-dark);
+}
+
+.reservation-info p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.reservation-status {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  background: var(--rose-soft);
+  color: var(--wine-dark);
+}
+
+/* BOTÓN CANCELAR */
+.btn-cancel {
+  background: var(--wine-dark);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background: var(--wine-strong);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .reservation-item {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

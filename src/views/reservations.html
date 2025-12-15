@@ -1,0 +1,58 @@
+<section class="reservations-page">
+
+  <!-- FORMULARIO -->
+  <div class="reservation-card">
+    <h2>Nueva reservación</h2>
+
+    <form id="reservation-form" class="reservation-form">
+      <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" name="customer_name" placeholder="Tu nombre" required />
+      </div>
+
+      <div class="form-group">
+        <label>Servicio</label>
+        <select name="service" required>
+          <option value="">Selecciona…</option>
+          <option>Masaje relajante</option>
+          <option>Facial hidratante</option>
+          <option>Aromaterapia</option>
+          <option>Masaje con piedras calientes</option>
+          <option>Reflexología</option>
+          <option>Paquete Spa Premium</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Fecha</label>
+          <input type="date" name="date" required />
+        </div>
+
+        <div class="form-group">
+          <label>Hora</label>
+          <input type="time" name="time" required />
+        </div>
+      </div>
+
+      <button type="submit" class="btn-primary full">
+        Reservar cita
+      </button>
+    </form>
+  </div>
+
+  <!-- LISTADO -->
+  <div class="reservations-list-section">
+    <h2>Reservaciones</h2>
+
+    <div id="reservations-list" class="reservations-cards">
+      <!-- JS inyecta las tarjetas aquí -->
+    </div>
+  </div>
+
+</section>
+
+
+<div id="reservations-list"></div>
+<script src="/js/reservations.js"></script>
+
