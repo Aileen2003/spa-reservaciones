@@ -30,3 +30,21 @@ Antes de ejecutar el proyecto es necesario contar con:
 
 ## Estructura del proyecto
 
+spa-reservaciones/
+│
+├── src/
+│ ├── app.js # Servidor Express
+│ ├── db.js # Conexión y esquema MySQL
+│ ├── routes/
+│ │ └── reservations.routes.js
+│ ├── public/
+│ │ └── styles.css
+│ └── views/
+│ ├── layout.html
+│ ├── index.html
+│ └── reservations.html
+│
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+└── README.md
